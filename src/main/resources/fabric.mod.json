@@ -3,15 +3,14 @@
     "id": "smallships-ecologics-compat",
     "version": "${version}",
     "name": "Smallships Ecologics Compat",
-    "description": "This is an example description! Tell everyone what your mod is about!",
+    "description": "Add Small Ships for Ecologics wood types.",
     "authors": [
-        "Me!"
+        "murphy_slaw"
     ],
     "contact": {
-        "homepage": "https://fabricmc.net/",
-        "sources": "https://github.com/FabricMC/fabric-example-mod"
+        "sources": "https://github.com/murphy-slaw/smallships-ecologics-compat"
     },
-    "license": "CC0-1.0",
+    "license": "MIT",
     "icon": "assets/smallships-ecologics-compat/icon.png",
     "environment": "*",
     "entrypoints": {
@@ -32,6 +31,8 @@
         "fabricloader": ">=0.18.4",
         "minecraft": "~1.20.1",
         "java": ">=17",
-        "fabric-api": "*"
+        "fabric-api": "*",
+        "small-ships":"*",
+        "ecologics": "*"
     }
 }
