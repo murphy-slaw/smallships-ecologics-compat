@@ -32,7 +32,7 @@
         "minecraft": "~1.20.1",
         "java": ">=17",
         "fabric-api": "*",
-        "small-ships":"*",
+        "smallships":"*",
         "ecologics": "*"
     }
 }
