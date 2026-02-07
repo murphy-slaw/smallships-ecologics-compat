@@ -13,10 +13,10 @@
       "item": "minecraft:lead"
     },
     "b": {
-      "item": "ecologics:coconut_boat"
+      "item": "ecologics:flowering_azalea_boat"
     }
   },
   "result": {
-    "item": "smallships:coconut_brigg"
+    "item": "smallships:flowering_azalea_cog"
   }
 }

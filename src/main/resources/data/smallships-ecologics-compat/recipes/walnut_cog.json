@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "cog",
+  "pattern": [
+    "lsl",
+    "bbb"
+  ],
+  "key": {
+    "s": {
+      "item": "smallships:sail"
+    },
+    "l": {
+      "item": "minecraft:lead"
+    },
+    "b": {
+      "item": "ecologics:walnut_boat"
+    }
+  },
+  "result": {
+    "item": "smallships:walnut_cog"
+  }
+}
