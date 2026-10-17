@@ -33,7 +33,6 @@ dependencies {
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
-    modImplementation "com.github.Chocohead:Fabric-ASM:${project.fabric_asm_version}"
     modImplementation 'maven.modrinth:ecologics:1CHAex8J'
     modImplementation "me.shedaniel.cloth:cloth-config-fabric:11.1.106"
     modImplementation 'maven.modrinth:small-ships:EVC4lV4p'

@@ -16,12 +16,6 @@
     "entrypoints": {
         "main": [
             "net.funkpla.smallships_ecologics_compat.SmallshipsEcologicsCompat"
-        ],
-        "client": [
-            "net.funkpla.smallships_ecologics_compat.SmallshipsEcologicsCompatClient"
-        ],
-        "mm:early_risers": [
-            "net.funkpla.smallships_ecologics_compat.EarlyRiser"
         ]
     },
     "mixins": [
@@ -32,7 +26,7 @@
         "minecraft": "~1.20.1",
         "java": ">=17",
         "fabric-api": "*",
-        "smallships":"*",
+        "smallships":">=2.0.0",
         "ecologics": "*"
     }
 }
