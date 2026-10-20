@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        "smallships:azalea_galleon",
+        "smallships:coconut_galleon",
+        "smallships:flowering_azalea_galleon",
+        "smallships:walnut_galleon"
+    ]
+}
