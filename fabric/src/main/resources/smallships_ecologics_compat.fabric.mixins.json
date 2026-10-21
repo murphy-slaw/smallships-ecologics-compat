@@ -1,0 +1,14 @@
+{
+    "required": true,
+    "package": "net.funkpla.smallships_ecologics_compat.mixin",
+    "compatibilityLevel": "JAVA_21",
+    "mixins": [
+        "BoatTypeMixin"
+    ],
+    "injectors": {
+        "defaultRequire": 1
+    },
+    "overwrites": {
+        "requireAnnotations": true
+	}
+}

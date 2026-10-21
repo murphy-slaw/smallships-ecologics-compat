@@ -1,0 +1,40 @@
+{
+  "entries": [
+    {
+      "enum": "net/minecraft/world/entity/vehicle/Boat$Type",
+      "name": "SMALLSHIPS_ECOLOGICS_COMPAT_AZALEA",
+      "constructor": "(Ljava/util/function/Supplier;Ljava/lang/String;Ljava/util/function/Supplier;Ljava/util/function/Supplier;Ljava/util/function/Supplier;Z)V",
+      "parameters": {
+        "class": "net/funkpla/smallships_ecologics_compat/ModBoatTypeProxies",
+        "field": "AZALEA"
+      }
+    },
+    {
+      "enum": "net/minecraft/world/entity/vehicle/Boat$Type",
+      "name": "SMALLSHIPS_ECOLOGICS_COMPAT_FLOWERING_AZALEA",
+      "constructor": "(Ljava/util/function/Supplier;Ljava/lang/String;Ljava/util/function/Supplier;Ljava/util/function/Supplier;Ljava/util/function/Supplier;Z)V",
+      "parameters": {
+         "class": "net/funkpla/smallships_ecologics_compat/ModBoatTypeProxies",
+        "field": "FLOWERING_AZALEA"
+      }
+    },
+      {
+          "enum": "net/minecraft/world/entity/vehicle/Boat$Type",
+          "name": "SMALLSHIPS_ECOLOGICS_COMPAT_WALNUT",
+          "constructor": "(Ljava/util/function/Supplier;Ljava/lang/String;Ljava/util/function/Supplier;Ljava/util/function/Supplier;Ljava/util/function/Supplier;Z)V",
+          "parameters": {
+              "class": "net/funkpla/smallships_ecologics_compat/ModBoatTypeProxies",
+              "field": "WALNUT"
+          }
+      },
+      {
+          "enum": "net/minecraft/world/entity/vehicle/Boat$Type",
+          "name": "SMALLSHIPS_ECOLOGICS_COMPAT_COCONUT",
+          "constructor": "(Ljava/util/function/Supplier;Ljava/lang/String;Ljava/util/function/Supplier;Ljava/util/function/Supplier;Ljava/util/function/Supplier;Z)V",
+          "parameters": {
+              "class": "net/funkpla/smallships_ecologics_compat/ModBoatTypeProxies",
+              "field": "COCONUT"
+          }
+      }
+  ]
+}

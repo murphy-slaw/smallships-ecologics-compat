@@ -1,0 +1,32 @@
+{
+    "schemaVersion": 1,
+    "id": "smallships-ecologics-compat",
+    "version": "${mod_version}",
+    "name": "Smallships Ecologics Compat",
+    "description": "Add Small Ships for Ecologics wood types.",
+    "authors": [
+        "murphy_slaw"
+    ],
+    "contact": {
+        "sources": "https://github.com/murphy-slaw/smallships-ecologics-compat"
+    },
+    "license": "MIT",
+    "icon": "assets/smallships-ecologics-compat/icon.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "net.funkpla.smallships_ecologics_compat.SmallshipsEcologicsCompat"
+        ]
+    },
+    "mixins": [
+        "smallships-ecologics-compat.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=0.18.4",
+        "minecraft": "~1.21.1",
+        "java": ">=21",
+        "fabric-api": "*",
+        "small-ships":">=2.0.0",
+        "ecologics": "*"
+    }
+}

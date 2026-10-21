@@ -1,0 +1,34 @@
+{
+    "schemaVersion": 1,
+    "id": "smallships_ecologics_compat",
+    "version": "${version}",
+    "name": "${mod_name}",
+    "description": "${description}",
+    "authors": [
+        "${mod_author}"
+    ],
+    "contact": {
+        "sources": "https://github.com/murphy_slaw/examplemod"
+    },
+    "license": "${license}",
+    "icon": "assets/smallships-ecologics-compat/icon.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "net.funkpla.smallships_ecologics_compat.SmallshipsEcologicsCompat"
+        ]
+    },
+    "mixins": [
+        "smallships_ecologics_compat.mixins.json",
+        "smallships_ecologics_compat.fabric.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=0.18.4",
+        "minecraft": "~1.21.1",
+        "java": ">=21",
+        "fabric-api": "*",
+        "smallships":">=2.0.0",
+        "ecologics": "*"
+    }
+}
+  
