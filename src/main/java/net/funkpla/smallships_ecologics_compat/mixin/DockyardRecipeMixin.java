@@ -14,16 +14,16 @@ public class DockyardRecipeMixin {
   private static Item extraPlankTypes(Boat.Type type, Operation<Item> original) {
     switch (type.getName()) {
       case "azalea" -> {
-        return ModBlocks.AZALEA_PLANKS.get().asItem();
+        return ModBlocks.AZALEA_PLANKS.asItem();
       }
       case "coconut" -> {
-        return ModBlocks.COCONUT_PLANKS.get().asItem();
+        return ModBlocks.COCONUT_PLANKS.asItem();
       }
       case "flowering_azalea" -> {
-        return ModBlocks.FLOWERING_AZALEA_PLANKS.get().asItem();
+        return ModBlocks.FLOWERING_AZALEA_PLANKS.asItem();
       }
       case "walnut" -> {
-        return ModBlocks.WALNUT_PLANKS.get().asItem();
+        return ModBlocks.WALNUT_PLANKS.asItem();
       }
       default -> {
         return original.call(type);

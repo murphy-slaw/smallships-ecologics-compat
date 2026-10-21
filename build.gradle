@@ -33,10 +33,12 @@ dependencies {
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
-    modImplementation 'maven.modrinth:ecologics:1CHAex8J'
+    modImplementation 'maven.modrinth:ecologics:U4PbcAbF'
     modImplementation "me.shedaniel.cloth:cloth-config-fabric:11.1.106"
-    modImplementation 'maven.modrinth:small-ships:EVC4lV4p'
-    modImplementation 'maven.modrinth:forge-config-api-port:HvR3IdRE'
+    modImplementation 'maven.modrinth:small-ships:vJnFZ5fQ'
+    implementation "com.electronwill.night-config:core:${project.night_config_version}"
+    implementation "com.electronwill.night-config:toml:${project.night_config_version}"
+    modImplementation 'maven.modrinth:forge-config-api-port:N5qzq0XV'
 }
 
 processResources {
@@ -48,7 +50,7 @@ processResources {
 }
 
 tasks.withType(JavaCompile).configureEach {
-	it.options.release = 17
+	it.options.release = 21
 }
 
 java {
@@ -57,8 +59,8 @@ java {
 	// If you remove this line, sources will not be generated.
 	withSourcesJar()
 
-	sourceCompatibility = JavaVersion.VERSION_17
-	targetCompatibility = JavaVersion.VERSION_17
+	sourceCompatibility = JavaVersion.VERSION_21
+	targetCompatibility = JavaVersion.VERSION_21
 }
 
 jar {

@@ -1,10 +1,11 @@
 package net.funkpla.smallships_ecologics_compat.mixin;
 
 import com.llamalad7.mixinextras.injector.ModifyReturnValue;
-import com.talhanation.smallships.mixin.vanillaboat.BoatTypeAccessor;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
+import com.talhanation.smallships.mixin.fabric.BoatTypeAccessor;
 import net.minecraft.world.entity.vehicle.Boat;
 import net.minecraft.world.level.block.Blocks;
 import org.spongepowered.asm.mixin.Mixin;
