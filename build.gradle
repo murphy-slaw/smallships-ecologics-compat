@@ -24,31 +24,28 @@ publishMods {
             Changelog.OutputType.MARKDOWN
     )
     def cfOptions = curseforgeOptions{
-        projectId = "1469248"
-        projectSlug = "emidiscovery" // Required for discord webhook
+        projectId = "1456544"
+        projectSlug = "small-ships-ecologics-compat" // Required for discord webhook
         accessToken = providers.environmentVariable("CURSEFORGE_TOKEN")
         minecraftVersions.add(project.minecraft_version)
         javaVersions.add(JavaVersion.VERSION_21)
         clientRequired = true
         serverRequired = true
-        requires("cloth-config")
-        requires("emi")
-        optional("reliable-emi")
+        requires("small-ships")
+        requires("ecologics")
     }
     def mrOptions = modrinthOptions{
-        projectId = "WO3G3DRj"
+        projectId = "PlTZXaqD"
         accessToken = providers.environmentVariable("MODRINTH_TOKEN")
         minecraftVersions.add(project.minecraft_version)
-        requires("cloth-config")
-        requires("emi")
-        optional("reliable-emi")
+        requires("small-ships")
+        requires("ecologics")
     }
 
     curseforge("curseforgeFabric"){
         from cfOptions
         file project(":fabric")
         modLoaders.add("fabric")
-        optional("modmenu")
     }
 
     curseforge("curseforgeNeoForge"){
@@ -61,7 +58,6 @@ publishMods {
         from mrOptions
         file project(":fabric")
         modLoaders.add("fabric")
-        optional("modmenu")
     }
 
     modrinth("modrinthNeoForge") {

@@ -29,3 +29,17 @@ type = "required"
 versionRange = "${minecraft_version_range}"
 ordering = "NONE"
 side = "BOTH"
+
+[[dependencies.${mod_id}]]
+modId = "smallships"
+type = "required"
+versionRange = "[2.0.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.${mod_id}]]
+modId = "ecologics"
+type = "required"
+versionRange = "[2.3.7,)"
+ordering = "NONE"
+side = "BOTH"
