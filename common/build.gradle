@@ -1,10 +1,11 @@
 plugins {
     id 'multiloader-common'
-    id 'net.neoforged.moddev'
+    id 'net.neoforged.moddev.legacyforge'
 }
 
-neoForge {
-    neoFormVersion = neo_form_version
+legacyForge {
+    version = "${minecraft_version}-${forge_version}"
+    validateAccessTransformers = false
 
     def at = file('src/main/resources/META-INF/accesstransformer.cfg')
     if (at.exists()) {
@@ -18,20 +19,16 @@ neoForge {
 }
 
 dependencies {
-    compileOnly group: 'org.spongepowered', name: 'mixin', version: '0.8.5'
-    compileOnly group: 'org.ow2.asm', name: 'asm-tree', version: '9.7.1'
-    compileOnly group: 'io.github.llamalad7', name: 'mixinextras-common', version: '0.5.3'
-    annotationProcessor group: 'io.github.llamalad7', name: 'mixinextras-common', version: '0.5.3'
 
+    compileOnly group: 'org.spongepowered', name: 'mixin', version: '0.8.5'
     implementation group: 'com.google.code.findbugs', name: 'jsr305', version: '3.0.1'
     implementation 'org.jetbrains:annotations:25.0.0'
+    implementation(jarJar("io.github.llamalad7:mixinextras-forge:0.5.3"))
+    compileOnly(annotationProcessor("io.github.llamalad7:mixinextras-common:0.5.3"))
+    implementation group: 'com.google.code.findbugs', name: 'jsr305', version: '3.0.1'
 
-    implementation "maven.modrinth:ecologics:ihEiqSv4"
-    implementation "me.shedaniel.cloth:cloth-config-neoforge:${cloth_config_version}"
-    implementation "maven.modrinth:small-ships:${small_ships_version}-neoforge-${minecraft_version}"
-    implementation "com.electronwill.night-config:core:${project.night_config_version}"
-    implementation "com.electronwill.night-config:toml:${project.night_config_version}"
-    implementation 'maven.modrinth:forge-config-api-port:tWlsPKJI'
+    modCompileOnly "maven.modrinth:ecologics:cUQnkGgj"
+    modCompileOnly "maven.modrinth:small-ships:${small_ships_version}-forge-${minecraft_version}"
 }
 
 configurations {

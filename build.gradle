@@ -2,7 +2,7 @@ import org.jetbrains.changelog.Changelog
 
 plugins {
     id 'net.fabricmc.fabric-loom-remap' version '1.16.3' apply false
-    id 'net.neoforged.moddev' version '2.0.137' apply false
+    id 'net.neoforged.moddev.legacyforge' version '2.0.148' apply(false)
     id 'org.jetbrains.changelog' version '2.2.1'
     id "me.modmuss50.mod-publish-plugin" version "2.2.0"
 }
@@ -24,49 +24,45 @@ publishMods {
             Changelog.OutputType.MARKDOWN
     )
     def cfOptions = curseforgeOptions{
-        projectId = "1469248"
-        projectSlug = "emidiscovery" // Required for discord webhook
+        projectId = "1456544"
+        projectSlug = "small-ships-ecologics-compat" // Required for discord webhook
         accessToken = providers.environmentVariable("CURSEFORGE_TOKEN")
         minecraftVersions.add(project.minecraft_version)
-        javaVersions.add(JavaVersion.VERSION_21)
+        javaVersions.add(JavaVersion.VERSION_17)
         clientRequired = true
         serverRequired = true
-        requires("cloth-config")
-        requires("emi")
-        optional("reliable-emi")
+        requires("smallships")
+        requires("ecologics")
     }
     def mrOptions = modrinthOptions{
-        projectId = "WO3G3DRj"
+        projectId = "PlTZXaqD"
         accessToken = providers.environmentVariable("MODRINTH_TOKEN")
         minecraftVersions.add(project.minecraft_version)
-        requires("cloth-config")
-        requires("emi")
-        optional("reliable-emi")
+        requires("smallships")
+        requires("ecologics")
     }
 
     curseforge("curseforgeFabric"){
         from cfOptions
         file project(":fabric")
         modLoaders.add("fabric")
-        optional("modmenu")
     }
 
-    curseforge("curseforgeNeoForge"){
+    curseforge("curseforgeForge"){
         from cfOptions
-        file project(":neoforge")
-        modLoaders.add("neoforge")
+        file project(":forge")
+        modLoaders.add("forge")
     }
 
     modrinth("modrinthFabric") {
         from mrOptions
         file project(":fabric")
         modLoaders.add("fabric")
-        optional("modmenu")
     }
 
     modrinth("modrinthNeoForge") {
         from mrOptions
-        file project(":neoforge")
-        modLoaders.add("neoforge")
+        file project(":forge")
+        modLoaders.add("forge")
     }
 }
