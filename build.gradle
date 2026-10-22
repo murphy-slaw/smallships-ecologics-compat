@@ -31,14 +31,14 @@ publishMods {
         javaVersions.add(JavaVersion.VERSION_17)
         clientRequired = true
         serverRequired = true
-        requires("smallships")
+        requires("small-ships")
         requires("ecologics")
     }
     def mrOptions = modrinthOptions{
         projectId = "PlTZXaqD"
         accessToken = providers.environmentVariable("MODRINTH_TOKEN")
         minecraftVersions.add(project.minecraft_version)
-        requires("smallships")
+        requires("small-ships")
         requires("ecologics")
     }
 
@@ -60,7 +60,7 @@ publishMods {
         modLoaders.add("fabric")
     }
 
-    modrinth("modrinthNeoForge") {
+    modrinth("modrinthForge") {
         from mrOptions
         file project(":forge")
         modLoaders.add("forge")
